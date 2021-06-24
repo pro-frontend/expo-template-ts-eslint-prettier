@@ -3,12 +3,14 @@
   "license": "MIT",
   "version": "0.0.1",
   "scripts": {
-    "cz": "cz",
+    "cz": "yarn commit",
+    "commit": "yarn format:all && yarn test && cz",
     "test": "jest",
     "test:cov": "jest --coverage",
     "test:debug": "jest --watch --coverage=false --changedSince=origin/master",
     "updateSnapshots": "jest -u --coverage=false",
     "dev:tools": "react-devtools",
+    "format:all": "prettier --write \"(App.tsx|src/**/*.(ts|tsx))\"",
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
@@ -62,6 +64,14 @@
     "preset": "jest-expo",
     "transformIgnorePatterns": [
       "node_modules/(?!(jest-)?react-native|react-clone-referenced-element|@react-native-community|expo(nent)?|@expo(nent)?/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|@sentry/.*)"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.{ts,tsx}",
+      "!**/coverage/**",
+      "!**/node_modules/**",
+      "!**/babel.config.js",
+      "!**/jest.setup.js"
     ]
   }
 }
