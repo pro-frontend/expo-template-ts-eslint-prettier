@@ -4,13 +4,14 @@
   "version": "0.0.1",
   "scripts": {
     "cz": "yarn commit",
-    "commit": "yarn format:all && yarn test && cz",
+    "commit": "yarn format:all && yarn lint:fix && git add . && yarn test && cz",
     "test": "jest",
     "test:cov": "jest --coverage",
     "test:debug": "jest --watch --coverage=false --changedSince=origin/master",
     "updateSnapshots": "jest -u --coverage=false",
     "dev:tools": "react-devtools",
     "format:all": "prettier --write \"(App.tsx|src/**/*.(ts|tsx))\"",
+    "lint:fix": "eslint --ext .tsx --ext .ts ./src",
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
@@ -28,6 +29,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
+    "@react-native-community/eslint-config": "^3.0.0",
     "@types/jest": "^26.0.23",
     "@types/react": "~16.9.35",
     "@types/react-native": "^0.64.10",
@@ -67,6 +69,9 @@
     "preset": "jest-expo",
     "transformIgnorePatterns": [
       "node_modules/(?!(jest-)?react-native|react-clone-referenced-element|@react-native-community|expo(nent)?|@expo(nent)?/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|@sentry/.*)"
+    ],
+    "modulePathIgnorePatterns": [
+      "App.tsx"
     ],
     "collectCoverage": true,
     "collectCoverageFrom": [

@@ -14,5 +14,18 @@ exports[`<Root /> has 1 child 1`] = `
   <Text>
     Open up App.tsx to start working on your app!
   </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#000",
+          "fontSize": 16,
+          "textAlign": "center",
+        },
+      ]
+    }
+  >
+    This is Entry Point.
+  </Text>
 </View>
 `;
