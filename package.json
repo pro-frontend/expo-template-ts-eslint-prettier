@@ -23,14 +23,17 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-41.0.0.tar.gz",
-    "react-native-web": "~0.13.12"
+    "react-native-web": "~0.13.12",
+    "styled-components": "^5.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@types/jest": "^26.0.23",
     "@types/react": "~16.9.35",
-    "@types/react-native": "~0.63.2",
+    "@types/react-native": "^0.64.10",
     "@types/react-test-renderer": "^17.0.1",
+    "@types/styled-components": "^5.1.10",
+    "@types/styled-components-react-native": "^5.1.1",
     "babel-core": "^6.26.3",
     "babel-eslint": "^10.1.0",
     "babel-preset-airbnb": "^5.0.0",
