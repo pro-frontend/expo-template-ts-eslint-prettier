@@ -14,3 +14,5 @@
 4. React-devtools - специальный модуль, позволяющий проводить процесс отладки приложения. Подробнее о запуске читать в разделе о командах (scripts из package.json).
 5. Поддержка Styled-Components. Официальная документация [рекомендует](https://docs.expo.io/guides/using-styled-components/#getting-started) использовать пакет `styled-components/native` вместо `styled-components`:
    > Use `styled-components/native` instead of `styled-components`
+
+Репозиторий поставляется как есть.
