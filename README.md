@@ -2,7 +2,9 @@
 
 Template-based project with setupped modules, debugger, unit tests and much more!
 
-Usuing this repo - the simplest way to run your project from scratch, test a hypotesis or create `MVP`. It also suitable for a production-ready product/code base of React-based components when you are planning to start a cross-platform React Native application with using an `Expo` framework.
+Usuing this repo - the simplest way to run your project from scratch, test a hypotesis or create `MVP`. It also suitable for a code base of React-based components when you are planning to start a cross-platform React Native application with using an `Expo` framework.
+
+We suggest using project based on installed application through Expo-cli with replacing non-system files like `src` folder, linters configs etc.
 
 This template is based on empty template, which is genered by [Expo-cli](https://docs.expo.io/workflow/expo-cli/). Project oriented to support of TypeScript.
 
